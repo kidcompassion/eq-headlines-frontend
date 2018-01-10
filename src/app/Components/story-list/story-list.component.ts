@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpModule} from '@angular/http';
 import { StoryFeedService } from '../../Services/story-feed.service';
+import { EjService } from '../../Services/ej-feed.service';
 
 import 'rxjs/Rx';
 
 @Component({
   selector: 'app-story-list',
   templateUrl: './story-list.component.html',
-  styleUrls: ['./story-list.component.css']
-  providers: [StoryFeedService]
+  styleUrls: ['./story-list.component.css'],
+  providers: [StoryFeedService, EjService]
 })
 
 export class StoryListComponent implements OnInit {

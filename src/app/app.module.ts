@@ -8,6 +8,7 @@ import { UpdateButtonComponent } from './Components/update-button/update-button.
 import { StoryComponent } from './Components/story/story.component';
 import { StoryListComponent } from './Components/story-list/story-list.component';
 import { StoryFeedService } from './Services/story-feed.service';
+import { EjService } from './Services/ej-feed.service';
 
 /*
 const appRoutes: Routes = [
@@ -39,7 +40,7 @@ const appRoutes: Routes = [
     BrowserModule,
     HttpModule
   ],
-  providers: [StoryFeedService],
+  providers: [StoryFeedService, EjService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

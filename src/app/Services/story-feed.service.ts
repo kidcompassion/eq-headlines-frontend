@@ -12,13 +12,13 @@ import 'rxjs/add/operator/catch';
 
 
 export class StoryFeedService {
-  edmontonjournalUrl: string = 'http://127.0.0.1:8000/ej-feed'; 
+  feedUrl: string = ''; 
   
   constructor(private http:Http) { }
   
 
   getApp(){
-    return this.http.get(this.edmontonjournalUrl)
+    return this.http.get(this.feedUrl)
     .map(this.extractData)
     .catch(this.handleError);
   }
@@ -28,7 +28,8 @@ export class StoryFeedService {
       let body = res.json();
 
       return body || {};
-      
+      console.log(body);
+
 
   }
 
