@@ -1,0 +1,14 @@
+.story {
+    border: solid 1px #e5e5e5;
+    padding: 40px;
+}
+
+.story img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+.story h1 {
+    font-size: 1.5em;
+}

@@ -1,0 +1,16 @@
+<article class="story col-12">
+  <div class="row">
+    <div class="col-md-3">
+        <img src="{{story.thumbnail}}">
+    </div>
+    <div class="col-md-5">
+        <a href="{{story.link}}"><h1>{{story.title}}</h1></a>
+        <p>{{story.date}} | {{story.author}} </p>
+        <p>{{story.body}}</p>
+    </div>
+    <div class="col-md-4">
+        <a target="_blank" class="btn btn-warning" href="{{story.link}}">Read Story</a> <a class="copy-link btn btn-info" (click)=copyLink()>Copy Link</a> <a class="btn btn-danger" (click)=bookmarkStory()><i class="fa fa-bookmark"></i></a>
+    </div>
+</div>
+</article>
+
